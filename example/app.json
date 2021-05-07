@@ -1,0 +1,22 @@
+{
+  "name": "awesome-toasts-example",
+  "displayName": "AwesomeToasts Example",
+  "expo": {
+    "name": "awesome-toasts-example",
+    "slug": "awesome-toasts-example",
+    "description": "Example app for awesome-toasts",
+    "privacy": "public",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
