@@ -1,31 +1,18 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import AwesomeToasts from 'awesome-toasts';
+import { ToastsProvider } from 'awesome-toasts';
 
-export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+import { StatusBar } from 'react-native';
 
-  React.useEffect(() => {
-    AwesomeToasts.multiply(3, 7).then(setResult);
-  }, []);
+import { Toast } from './components/toast';
 
+import { MainScreen } from './screens/main';
+
+export function App() {
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
+    <ToastsProvider component={Toast}>
+      <StatusBar barStyle="light-content" />
+      <MainScreen />
+    </ToastsProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
-  },
-});

@@ -1,7 +1,7 @@
 {
   "name": "awesome-toasts",
   "version": "0.1.0",
-  "description": "Some toasts",
+  "description": "Some lovely toasts",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/index.d.ts",
@@ -149,5 +149,9 @@
         }
       ]
     ]
+  },
+  "dependencies": {
+    "react-native-gesture-handler": "^1.10.3",
+    "react-native-status-bar-height": "^2.6.0"
   }
 }
