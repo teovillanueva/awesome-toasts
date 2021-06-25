@@ -1,6 +1,6 @@
 {
   "name": "awesome-toasts",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "Create awesome toasts for your React Native app easily!",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -95,6 +95,9 @@
       "tagName": "v${version}"
     },
     "npm": {
+      "publish": true
+    },
+    "github": {
       "publish": true
     },
     "plugins": {
