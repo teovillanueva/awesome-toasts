@@ -1,6 +1,6 @@
 {
   "name": "awesome-toasts",
-  "version": "0.1.3",
+  "version": "0.1.2",
   "description": "Create awesome toasts for your React Native app easily!",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
